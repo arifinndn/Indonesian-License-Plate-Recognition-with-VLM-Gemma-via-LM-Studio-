@@ -1,6 +1,6 @@
-#Indonesian License Plate Recognition with VLM (Gemma via LM Studio)
+Indonesian License Plate Recognition with VLM (Gemma via LM Studio)
 
-#Description
+Description
 
 #Concept of VLM (Visual Language Model) and Its Application in OCR
 
