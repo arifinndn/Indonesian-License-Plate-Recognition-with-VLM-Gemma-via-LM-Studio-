@@ -5,7 +5,9 @@
 ### Concept of VLM (Visual Language Model) and Its Application in OCR
 
 A Visual Language Model (VLM) is an AI model capable of understanding and processing both images and text simultaneously.
+
 Examples of VLMs: Gemma, LLaVA, Flamingo, MiniGPT-4.
+
 This project uses Visual Language Model to perform OCR (Optical Character Recognition) on Indonesian license plate images.
 The Gemma model is run locally using LM Studio, and the prediction results are evaluated using Character Error Rate (CER).
 
