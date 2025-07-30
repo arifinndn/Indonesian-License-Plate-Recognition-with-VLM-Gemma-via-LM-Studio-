@@ -64,7 +64,7 @@ Running python OCR_license_plate.py
 The program will:
 
 	1. Read each image in dataset folder
-	2. Send images to the VLM model via LM Studio API
+	2. Send images to the VLM model via LM Studio API with prompt "What is the license plate number shown in this image? Respond only with the plate number."
 	3. Receive license plate predictions
 	4. Calculate Character Error Rate (CER) according to labels.csv as the ground truth
 	5. Save results to prediction_output.csv file
