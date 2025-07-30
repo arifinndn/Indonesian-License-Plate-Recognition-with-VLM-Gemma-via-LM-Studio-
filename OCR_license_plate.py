@@ -79,6 +79,27 @@ def main():
     average_cer = sum(cer_scores) / len(cer_scores)
     print(f"\n📊 Average CER: {average_cer:.3f}")
 
+    # Inisialisasi penghitung
+    jumlah_akurat = 0
+    jumlah_kurang_akurat = 0
+    jumlah_tidak_akurat = 0
+
+    # Klasifikasi berdasarkan nilai CER
+    for score in cer_scores:
+        if score == 0:
+            jumlah_akurat += 1
+        elif 0 < score <= 0.25:
+            jumlah_kurang_akurat += 1
+        else:
+            jumlah_tidak_akurat += 1
+
+    # Cetak hasil klasifikasi
+    total = len(cer_scores)
+    print("\n📊 Klasifikasi Prediksi Berdasarkan CER:")
+    print(f"Akurat         : {jumlah_akurat} ({jumlah_akurat/total:.1%})")
+    print(f"Kurang Akurat : {jumlah_kurang_akurat} ({jumlah_kurang_akurat/total:.1%})")
+    print(f"Tidak Akurat  : {jumlah_tidak_akurat} ({jumlah_tidak_akurat/total:.1%})")
+    
     df.to_csv(OUTPUT_CSV_PATH, index=False)
     print(f"\n✅ Output saved to {OUTPUT_CSV_PATH}")
 
