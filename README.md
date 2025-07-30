@@ -109,7 +109,7 @@ Every character matches
 No substitutions, deletions, or insertions
 
 
-### 2. Failed Example (CER = 0.375)
+### 2. Failed Example (CER = 0.25)
 
 Ground Truth	Prediction	CER
 		
